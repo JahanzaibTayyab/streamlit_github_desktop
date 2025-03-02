@@ -1,0 +1,21 @@
+[project]
+name = "streamlit-github-desktop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jahanzaib Tayyab", email = "jtayyab204@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.42.2",
+]
+
+[project.scripts]
+streamlit-github-desktop = "streamlit_github_desktop:main"
+run_app = "streamlit_github_desktop.script:app"
+run_app2 = "streamlit_github_desktop.script:app2"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
