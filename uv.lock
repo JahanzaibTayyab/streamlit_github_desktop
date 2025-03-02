@@ -670,11 +670,15 @@ name = "streamlit-github-desktop"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "numpy" },
     { name = "streamlit" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "streamlit", specifier = ">=1.42.2" }]
+requires-dist = [
+    { name = "numpy", specifier = ">=2.2.3" },
+    { name = "streamlit", specifier = ">=1.42.2" },
+]
 
 [[package]]
 name = "tenacity"
